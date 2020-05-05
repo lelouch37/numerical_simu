@@ -10,6 +10,7 @@ class fraction:
     def __init__(self, a, b):
         self.__numerator = a
         self.__denominator = b
+        self.reduction()
         
     def disp(self):
         print(str(self.__numerator) + "/" + str(self.__denominator))
