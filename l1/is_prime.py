@@ -9,6 +9,4 @@ def is_prime(x) :
     for num in range(2, x):
         if x % num == 0:
             return False
-            break
-    else:
-        return True
+    return True
