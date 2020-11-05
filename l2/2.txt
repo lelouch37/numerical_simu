@@ -1,0 +1,73 @@
+課題1 fractionクラスを作成せよ(1)
+
+分数（fraction）を求めるクラスfractionを作成せよ．但しファイル名はfraction.pyとせよ．
+1) クラスのインスタンスが持つ変数(インスタンス変数)は，分子を保存しておく変数numeratorと，分母を保存しておく変数denominatorのみとする．
+
+2) メソッドは__init__，disp，addの3つを作成する．
+
+3) 各Step毎にfractionクラス呼び出すプログラムを実行し，メソッドが動作するか確認を行った上，バグがある場合デバックせよ．
+
+
+
+Step1: __init__の作成
+インスタンスを生成するための特殊なメソッド (コンストラクタ)__init__の引数はself，a, bとする．
+さらにメソッド__init__内でインスタンス変数numeratorにaを代入し，同様にインスタンス変数denominatorにbを代入せよ
+
+
+
+Step2: dispの作成
+fractionクラスのインスタンスの持つ変数を表示するためのメソッドdispを追加せよ．
+メソッドdispの引数はself，戻り値は無し(void)，表示は，分子 / 分母，のようにせよ．
+
+
+
+Step3: addの作成
+fractionクラス同士の足し算を行うメソッドaddを追加せよ．
+メソッドaddは，引数をselfと(fractionクラスのインスタンス)bとし，selfとbが分数の足し算の結果をfractionクラスのインスタンスとして返す．但し，約分はしなくてよい．
+
+
+課題2 fractionクラスを作成せよ(2)
+
+fractionクラスのaddメソッドはxとyをfractionクラスのインスタンスとしたとき，x.add(y)とドット(.)演算子を用いてaddメソッドを呼びたすことで，利用できた．Pythonには，プラス(+)演算子を用いて呼び出せる特殊なメソッド__add__がある．fractionクラスのメソッドaddを__add__と変更し，x + yのように呼び出せるようにせよ．
+
+※ ソースコードはclassの定義からすべて提出せよ
+
+
+課題3 fractionクラスを作成せよ(3)
+
+fractionクラスのインスタンス変数の名前を__numeratorと__denominatorに全て変更せよ．
+
+※ ソースコードはclassの定義からすべて提出せよ
+
+
+課題4 fractionクラスを作成せよ(4)
+
+fractionクラスに特殊メソッド__repr__を定義せよ．
+但し，__repr__の引数はselfのみ，戻り値はstr(self.__numerator) + "/" + str(self.__denominator)とせよ．
+
+※ ソースコードはclassの定義からすべて提出せよ
+
+
+課題5 最大公約数を求める関数gcd
+
+aとbを引数として最大公約数(Greatest Common Divisor)を求める関数gcd (a, b)を作成せよ．
+
+
+課題6 fractionクラスを完成せよ
+
+最大公約数を求める関数gcdを用いて約分をするように変更したプログラムを提出せよ．
+
+※ ソースコードはgcdやclassの定義などすべて提出せよ
+
+
+(オプショナル)課題7 Pythonのライブラリについて調べよ
+
+本科目では数値シミュレーション用のライブラリNumPy, SciPy, Matplotlibを使用する．
+それに対し，Pythonは数値シミュレーション以外にも利用される．
+例えば，
+* WebフレームワークのDjango
+* 機械学習用のTensorflow Keras
+* クローリング/スクレイピング用のrequests, Beautiful Soup
+* Excel操作用のOpenPyXL
+などなど，非常に便利なライブラリがcondaやpipで簡単にインストールできる．
+興味があるライブラリを調べよ．(もちろん上記以外でもOK!)
